@@ -23,10 +23,10 @@ class AlienInvasion:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
-        
-        self.screen.fill(self.settings.bg_color)
-        self.ship.blitme()    
-        pygame.display.flip()
+        while True:
+            self.screen.fill(self.settings.bg_color)
+            self.ship.blitme()    
+            pygame.display.flip()
 
 if __name__ == '__main__':
 
